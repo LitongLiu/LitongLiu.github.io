@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://eric.walkingshaw.net/research.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Litong Liu  - Research </title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./static/css2" rel="stylesheet">
+  <link href="./static/css2(1)" rel="stylesheet">
+  <link href="./static/all.css" rel="stylesheet" type="text/css">
+  <link href="./static/print.css" rel="stylesheet" type="text/css" media="print">
+  <link href="./static/me.JPG" rel="icon" type="image/png" sizes="610x610">
+  <!-- Google tag (sorry for spying on you...) -->
+  
+<script async="" src="./static/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F9G053G7JN');
+</script>
+
+</head>
+
+<body onload="setEmail()" style="">
+<div id="page">
+
+<div id="navbar">
+  <div class="container">
+    <a href="https://liulitong-Jessie.github.io" class="nav-head">Litong Liu</a>
+    <div class="nav-sep">|</div>
+    <!-- <a href="/about.html" class="nav-item ">About</a> -->
+    <a href="./Litong - Education.html" class="nav-item ">Education</a>
+    <a href="./Litong - Research.html" class="nav-item ">Research</a>
+    <!-- <a href="./Litong - Publication.html" class="nav-item ">Publications</a> -->
+    <a href="./static/Liu_Litong_Resume.pdf" class="nav-item nav-right">Resume</a>
+    <a href="./static/Liu_Litong_CV.pdf" class="nav-item nav-right">CV</a>
+  </div>
+</div>
+
+<!--
+<div id="content">
+  <div class="container">
+<h1 id="simulation-research">Programming Languages Research</h1>
+<h2 id="stochastic-optimization">Overview</h2>
+<p>My interest in programming languages is rooted in the belief that the languages
+we use shape the way we view the world, and that better languages can help us
+understand, solve, and explain more difficult problems.</p>
+-->
+
+<div id="content">
+  <div class="container">
+    <h2 id="simulation-research">
+      Simulation (<a href="https://github.com/liulitong-Jessie/COVID">COVID</a>)
+    </h2>
+      <p>
+        Advisor: Prof. Shane Henderson, Cornell, USA
+      </p>
+    <!--
+      <p>
+        Oct.2022 to now
+      </p>
+    -->
+      <p>
+        For this project, we aim to build various testing problems and solvers which can help people to make decisions and policies. We use python to 
+        build our simulation library and solvers. I am responsible for the "COVID" problem and "Call Center" problem.
+
+        For the COVID problem, we are trying to use simulation optimization to find an optimal vaccination distribution and testing frequencies to a 
+        certain population (like Cornell) to achieve a minimum number of infections in a given period. Suppose there are m people for a n days period. 
+        The original problem was formulated by tracking all infected individuals and simulate their disease progress to estimate our total number of infections, 
+        which has a time complexity of O(mn). To improve the efficiency, we re-developed an algorithm which only consider the group changes for each day. 
+        Now, we use multinomial distribution to do disease schedules for each group, and everyday we use multinomial to simulate the isolation schedule 
+        for each group. At the corresponding day, we move the patiences to corresponding disease states or isolation states according to their disease schedule
+        and isolation schedule. By doing this, the time complexity is reduced to O(kn), where k is the number of groups that population can be divided and is 
+        much smaller than m.  
+      </p>
+
+
+    <h2 id="xai">
+      Interpretable Mchine Learning (<a href="./static/Algorithm Bias and Interpretable AI Project Final Report.pdf">Final Report</a>, <a href="./static/Algoirthm_Bias_notes.pdf">Notes</a>)
+    </h2>
+      <p>
+        Advisor: Prof. Zhiyu Quan, UIUC, USA
+      </p>
+    <!--
+      <p>
+        Oct.2022 to now
+      </p>
+    -->
+      <p>
+        For special applications like financial market and insurance usually require people understand the process before making decisions. However, traditional 
+        machine learning algorithms, for example random forest, have high predicting accuracy but are hard to understand the behind logic, decreasing its practicability
+        in financial fields. For this project, we aim to explore different methods in interpretable machine learning and finally build an algorithm that can maintain 
+        high accuracy property of traditional methods but also increase its interpretability. Currently, we are in the literature review states, everyone is responsible for
+        finding some interesting algorithms each week and report and summary to others. For the next period, we are going to develop our own algorithm.
+      </p>
+
+    <h2 id="cv">
+      Image segmentation
+    </h2>
+      <p>
+        Advisor: Prof. Dong Wang, CUHK(SZ), CN
+      </p>
+    <!--
+      <p>
+        Nov.2020 to now
+      </p>
+    -->
+
+      <p>
+        Image segmentation is an important part in computer vision. While the deep learning methods are becoming popular these days, they usually require 
+        users to tune complicated parameters and may need large data and long time to train. Different from the learning methods, traditional methods are 
+        usually more efficient and easier to implement. In this project, we developed an information-driven unsupervised image segmentation model, which 
+        can be applied to medical imaging model and target detection. In our algorithm, we convert image segmentation problem into concave function optimization over a 
+        convex set by characteristic function, such that the optimization problem can have an explicit solution. The developed algorithm conduct segmentation 
+        based on initial knowledge and data of image objects. More specifically, to preserve the topology property of an image, we project our updates by algorithm 
+        to the set of simple points (i.e. the points that changes will not change the topology of the image). By considering the topology property, we are 
+        able to detect some tiny structures, making the segmentation more precise and robust to noises.  
+      </p>
+
+    <h2 id="behavior-finance">
+      Study on Behaviors of Retail Investors in Stock Market (<a href="./static/retail_trader.pdf">Final Report</a>)
+    </h2>
+      <p>
+        Advisor: Prof. Shuai Ye, CUHK(SZ), CN
+      </p>
+    <!--
+      <p>
+        March to Dec.2020
+      </p>
+    -->
+
+      <p>
+        Based on the observation of Chinese stock market, we found that the average return for retail investors is much lower than the market return. To figure out 
+        the reason for their bad performance and teach more investors how to reasonably invest, we aim to find explainable factors to their bad performance.
+        In this project, we developed analytical framework to quantitatively analyze main factors and their corresponding importance for the low yeild 
+        of individual investors in stock market. We found four potential behavioral biases for investors that may lead to their bad performance: overtrading, disposition 
+        effect, chasing winners, overconfidence and lottery preference. To analyze them, we assume every time only one of the biases are corrected and we created a 
+        corresponding hypothetical portfolio. By comparing the return of hypothetical portfolio and the virtual portfolio, we can determine the influence of various 
+        factors on the loss degree of investors. Overall, we found that disposition effect is one of the most important fators lead to the low yield, and by correcting it,
+        investors can improve their performance the most. This study explored the causal relationship between individual investors' behavioral deviation and stock market trends, 
+        and provided empirical basis for constructing risk prediction indicators. 
+      </p>
+
+
+    <h2 id="information-theory">
+      Study of Transition Scheduling in Information Theory
+    </h2>
+      <p>
+        Advisor: Prof. Shenghao Yang, CUHK(SZ), CN
+      </p>
+    <!--
+      <p>
+        Sep.2020 to Dec.2021
+      </p>
+    -->
+
+      <p>
+        To transmit signals in submarine efficiently, people need to develop an efficient schedule for the line and time for each transmission of signals. To simplify 
+        the problem to be workable, we consider a network with N nodes with line topology with unicast transmission. Each node can transmit and receive certain communication 
+        signal in a time slot. We convert our network to a graph setting, where there is an edge from node i to j if node i can send signal to node j. The time delay for 
+        signal transmission is the corresponding edge weight, it can be either a rational or irrational number. Our team focus on characterize the rate region explicitly 
+        and prove the continuity of rate region when the delay is precise. We found that when there are only small perturbations of delay matirx, the rate region is unchanged; 
+        two line network with isomorphic static graphs have same rate region.
+      </p>
+
+
+    <h2 id="credit-risk-study">
+      Model Research and Analysis of Credit Decisions of Small and Medium-sized Enterprises
+    </h2>
+    <!--
+      <p>
+        Sep.2020
+      </p>
+    -->
+
+      <p>
+        With a limited total budget, a bank needs to decide the capital allocation for different companies and the corresponding interest rate. Usually the amount of loans a small or 
+        medium company and the interest rate can get from bank depends on the credit rate level. For a trustworthy company, the default risk for bank is lower, thus bank can give it 
+        lower interest rate. On the contrary, the company would get a high interest rate to compensate the potential default risk. In this competition, we aim to utilize the given data 
+        of 123 companies to build a quantitative model of measuring credit risk of companies and build a loan allocation model for the bank. Since there are 302 companies do not have 
+        credit history. First, to get more data, we use bootstrap to draw multiple datasets from the same distribution with train dataset. We replicate data of  credit level from A to D 
+        to 1000. To measure the default risk for company, we calculate the ROI and their creditworthiness for each company. Use the credit records for train set, we fit a model to measure 
+        the credit risk. For companies with higher credit rate level, we assign them a higher credit score. The total score for a company is the weighted sum of its creditworthiness and ROI. 
+        The second step is to use the customer data from bank and their interest rates to fit a model to measure the relationship between interest rate and customer loss. 
+        After obtaining total scores for companies and the probability of losing a potential customer, we construct an optimization model, where our objective is to get higher return, 
+        which is constrained to a certain level of potential customer loss. By solving this convex optimization problem, we are able to get the optimal policy for bank to distribution the 
+        annual capital. 
+      </p>
+    
+    
+    </div>
+</div>
+
+
+<div id="footer">
+  <div class="container">
+   
+    <div class="foot-madeby"></div>
+   
+  </div>
+</div>
+
+</div>
+<script src="./static/jquery.min.js"></script>
+<script src="./static/scripts.js"></script>
+<!-- <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+
+
+</body></html>
